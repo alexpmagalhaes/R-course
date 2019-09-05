@@ -137,23 +137,7 @@ To aid in this task I will list all the functions you will need.
 `read_csv`, `write.csv`, `gather`, `spread`, `str_split_fixed`, `paste`, `collapse`, `group_by`, `summarize`, `mean`, `column_to_rownames`, `apply`.
 
 
-```r echo = FALSE
 
-repqPCR <- read_csv("qPCR_replicates.csv")
-longrepqPCR <- gather(repqPCR, "group", "Expression", -ID)
-longrepqPCR$tgroup = apply(
-  str_split_fixed(longrepqPCR$group, "_", 3)[, c(1, 2)],
-  1,
-  paste, collapse ="_"
-  )
-meansqPCR <- longrepqPCR %>%
-  group_by(ID, tgroup) %>%
-  summarize(expression_mean = mean(Expression)) %>%
-  spread(., tgroup, expression_mean)
-meansqPCR <- meansqPCR %>% column_to_rownames('ID')
-write.csv(meansqPCR, file= "meansqPCR.csv")
-
-```
 
 ## You are done!
 
