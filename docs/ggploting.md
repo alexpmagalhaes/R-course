@@ -24,25 +24,25 @@ df <- read_csv("totalrootdf.csv")
 * add `geom_point()` to the plot.
 
 
-```{r}
+```r
 # trying to plot without mappings
 ggplot(data = df)
 ```
 
-```{r}
+```r
 # Map rootlength to x-axis and Hair.Root.length to y-axis
 ggplot(data = df,
        mapping = aes(x = rootlength, y = Hair.Root.length))
 ```
 
-```{r}
+```r
 #  Add points with geom_point()
 ggplot(data = df,
        mapping = aes(x = rootlength, y = Hair.Root.length)) +
        geom_point()
 ```
 
-```{r}
+```r
 # Again, but with some additional arguments
 # Also using a new theme temporarily
 ggplot(data = df,
@@ -56,7 +56,7 @@ ggplot(data = df,
   theme_minimal()
 ```
 
-```{r}
+```r
 # Assign class to the color aesthetic and add labels with labs()
 ggplot(data = df,
        mapping = aes(x = rootlength, y = Hair.Root.length, col = Sample)) +  # Change color based on class column
@@ -68,7 +68,7 @@ ggplot(data = df,
        caption = "Source: Fake data repository")
 ```
 
-```{r}
+```r
 # Add a regression line for each class
 ggplot(data = df,
        mapping = aes(x = rootlength, y = Hair.Root.length, col = Sample)) +
@@ -77,7 +77,7 @@ ggplot(data = df,
 
 ```
 
-```{r}
+```r
 # Facet by class
 ggplot(data = df,
        mapping = aes(x = rootlength,
@@ -97,7 +97,7 @@ Try to make this plot.
 <details><summary>Solution</summary>
 <p>
 
-  ````r
+  ```r
 g <- ggplot(df, aes(x = Sample, y = rootlength, colour = Treatment)) +
   geom_boxplot(notch = FALSE) +
   geom_jitter(size = 0.5, alpha = 0.05, width = 0.25, colour = 'black') +
@@ -136,13 +136,13 @@ library("cowplot")
 mg <- plot_grid(g, g1,labels = c('A', 'B'), label_size = 12)
 mg
 
-````
+```
 </p>
 </details>
 
 Now lets save the plot!
 
-```{r}
+```r
 ggsave(filename = "myplot.pdf", plot = mg, width = 6, height = 4)
 ```
 ## You are done!

@@ -139,7 +139,7 @@ To aid in this task I will list all the functions you will need.
 <details><summary>Solution</summary>
 <p>
 
-````r
+```r
 repqPCR <- read_csv("qPCR_replicates.csv")
 longrepqPCR <- gather(repqPCR, "group", "Expression", -ID)
 longrepqPCR$tgroup = apply(
@@ -153,7 +153,8 @@ meansqPCR <- longrepqPCR %>%
   spread(., tgroup, expression_mean)
 meansqPCR <- meansqPCR %>% column_to_rownames('ID')
 write.csv(meansqPCR, file= "meansqPCR.csv")
-````
+
+```
 </p>
 </details>
 

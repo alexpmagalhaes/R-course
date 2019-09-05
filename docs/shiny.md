@@ -16,7 +16,7 @@ This shiny app is a GUI for ggplot. It just makes the whole experiance much quic
 Try it out and see how nice it is!
 
 
-```{r}
+```r
 library("ggplotgui")
 # You can call the function with and without passing a dataset
 ggplot_shiny()
@@ -37,7 +37,7 @@ It`s a wrapper around the ggplot2 package with a less opaque syntax.
 
 One exemple of a function you can try!
 
-```{r}
+```r
 
 library(ggpubr)
 

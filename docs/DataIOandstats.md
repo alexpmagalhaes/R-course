@@ -38,7 +38,7 @@ Calculate basic descriptive statistics using `mean()`, `median()`, `table()` (an
 <details><summary>Solution</summary>
 <p>
 
-  ````r
+  ```r
   rootl_df <- read.csv("rootlength.csv", header = TRUE, row.names = NULL, sep = ",", dec = ".")
 
   qpcr_df <- read_excel("qPCR.xls", col_names = TRUE, sheet = NULL, range = NULL, col_types = NULL)
@@ -51,7 +51,7 @@ Calculate basic descriptive statistics using `mean()`, `median()`, `table()` (an
 
   write.csv(heat_df, file = "heat_df.csv", quote = FALSE, row.names = TRUE)
 
-````
+```
 </p>
 </details>
 
@@ -70,7 +70,8 @@ This not only helps you understant if the objects were created the right way but
 <details><summary>Solution</summary>
 <p>
 
-  ````r
+  ```r
+
 dim(rootl_df)
 
 mean(rootl_df$colMock)
@@ -80,7 +81,8 @@ summary(rootl_df)
 hist(rootl_df$colMock)
 
 mean(rootl_df$colMock[rootl_df$colMock < 5])
-````
+
+```
 </p>
 </details>
 
@@ -104,7 +106,7 @@ Today you are going to sample from **uniform** and **normal** distributions. The
 <details><summary>Solution</summary>
 <p>
 
-````r
+```r
 library("tibbles")
 
 colMock <- runif(500, min = 3, max = 4)
@@ -117,7 +119,7 @@ hist(colMock)
 
 write.csv(newtable, file = "newtable.csv", quote = FALSE , row.names = FALSE )
 
-````
+```
   </p>
 </details>
 
