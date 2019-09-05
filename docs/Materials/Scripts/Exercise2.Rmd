@@ -1,0 +1,76 @@
+---
+title: "Exercise 2"
+output: html_notebook
+---
+
+```{r}
+setwd("/Users/alex/Desktop/") #Sets the working directory
+date() #Add a date to output
+
+#Load the necessary libraries
+library("readxl")
+
+stringsAsFactors = FALSE #This ensures that numerical characters are loaded as numerical class values
+
+```
+
+```{r}
+#Read files from a directory
+
+#Reading csv files
+rootl_df <- read.csv("rootlength.csv", header = TRUE, row.names = NULL, sep = "," , dec = ".") #check out OS settings for separator and decimal character separator
+
+#Reading excell files
+qpcr_df <- read_excel("qPCR.xls", col_names = TRUE, sheet = NULL, range = NULL, col_types = NULL) #You can select the sheet and the range of your excell files.
+
+#Reading de-limited files
+heat_df <- read.delim("DEGS.txt", header = TRUE, row.names = 1, dec = ".") #row names option makes it so you can work only with the numerical part of the table. The '1' refers to the first column.
+```
+
+```{r}
+head(rootl_df) #outputs the first 6 rows of a table
+```
+
+```{r}
+#Writting files
+
+write.csv(qpcr_df, file = "qpcr_df.csv", quote = FALSE, row.names = TRUE) #quote option allows for cells in the table to be 
+
+write.csv(heat_df, file = "heat_df.csv", quote = FALSE, row.names = TRUE) #depending on the type of table you have the names of the rows can be included of not.
+
+```
+
+```{r}
+#Getting some stats of the table
+
+dim(rootl_df) #prints the the number of rows and columns
+
+mean(rootl_df$colMock) # '$'allow the selection of a column
+
+summary(rootl_df) #prints a statistics table of each column
+
+hist(rootl_df$colMock)
+
+mean(rootl_df$colMock[rootl_df$colMock < 5]) # '[]' allows for filtering options. '&' is to chain multiple conditions. '==' equals has to be writen two times to differenciate the variable definition single '='.
+
+
+```
+
+```{r}
+# Creation of data frames from vectors and sumulating data
+
+library("tibble")
+
+colMock <- runif(500, min = 3, max = 4) # Makes a uniformely distributed vector with 500 samples, with min of 3 and max of 4
+colGA <- rnorm(500, 4.5, 1) #Makes a normaly distributed vector with 500 samples, a mean value of 4.5 and variance of 1
+
+# Tibble makes data frames from vectors
+newtable <- tibble(colMock, colGA )
+
+hist(colGA)
+hist(colMock)
+
+write.csv(newtable, file = "newtable.csv", quote = FALSE , row.names = FALSE )
+```
+
+

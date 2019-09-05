@@ -1,0 +1,134 @@
+---
+title: "Exercise 3"
+output:
+  html_notebook: default
+  pdf_document: default
+---
+
+```{r}
+setwd("/Users/alex/Desktop/") #Sets the working directory
+date() #Add a date to output
+
+#Load the necessary libraries
+library("tidyverse")
+
+```
+
+```{r}
+#Load the rootlength file
+rldf <- read_csv("root_length.csv")
+rhdf <- read_csv("root_hair.csv")
+```
+```{r}
+#Simple things to do
+names(rldf) #prints the column names
+```
+```{r}
+#Change column names
+rldf <- rldf %>%
+  rename(rootlength = length ) # %>% is an opetator sign
+```
+
+```{r}
+names(rldf) # printing the new names
+```
+```{r}
+#You can select as column with the 'select'
+rldf %>%
+  select('rootlength', Genotype)
+```
+
+
+```{r}
+# remove a column from the dataset use the '-' sign
+rldf %>%
+  select(-Genotype)
+```
+
+
+```{r}
+#selecting a all the column that start with a pattern
+rldf %>%
+  select(starts_with("root"))
+```
+```{r}
+#to filter by value
+rldf %>%
+  filter(rootlength >= 3)
+```
+
+```{r}
+# To rearange the table
+# use desc to rearrange in descending order
+rldf <- rldf %>%
+  arrange(desc(rootsample))
+
+rldf
+```
+
+```{r}
+#mutate is to create new column.
+tenrldf <- rldf %>%
+  mutate(tenrootlength = rootlength * 10)
+logrldf <- rldf %>%
+  mutate(logrootlength = log2(rootlength))
+```
+
+
+```{r}
+#filtering data
+rldfColGA <- rldf %>%
+  filter(Genotype == "Col-0" & Treatment == "GA")
+```
+
+```{r}
+# To join two data frames by a commun variable
+rhdf <- rhdf %>%
+  select(-Genotype, -Treatment)
+totaldf <- rldf %>%
+  left_join(rhdf, by = "rootsample")
+totaldf
+write.csv(totaldf, file = "totalrootdf.csv", row.names = FALSE)
+```
+
+```{r}
+#gather character variables
+totaldf <- rldf %>%
+  mutate(sample = paste(Genotype, Treatment, sep = '_'))
+```
+
+```{r}
+#use spread to widen a data frame
+widetotaldf <- totaldf %>%
+  spread(key = 'sample', value = 'rootlength',  fill = NA)
+widetotaldf
+```
+
+```{r}
+#Chalenge for Exercise 3
+
+#open the table
+repqPCR <- read_csv("qPCR_replicates.csv")
+# make the table into long format
+longrepqPCR <- gather(repqPCR, "group", "Expression", -ID)
+# create a new column that as the name of the samples without the _
+# and the number of the replicate
+# but will have the sample name repeated per replicate so you can calculate means
+longrepqPCR$tgroup = apply(
+  str_split_fixed(longrepqPCR$group, "_", 3)[, c(1, 2)],
+  1,
+  paste, collapse ="_"
+  )
+# this is a pipe. group_by will devide the table into groups,
+# in this case by ID and replicate,
+# summarize will create stats for the groups and we are selecting the mean
+# and spread returns the table to the wide format.
+meansqPCR <- longrepqPCR %>%
+  group_by(ID, tgroup) %>%
+  summarize(expression_mean = mean(Expression)) %>%
+  spread(., tgroup, expression_mean)
+# makes the column named ID as names of the rows
+meansqPCR <- meansqPCR %>% column_to_rownames('ID')
+# outputs a file for the table
+write.csv(meansqPCR, file= "meansqPCR.csv")
+```

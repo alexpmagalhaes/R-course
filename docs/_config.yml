@@ -1,0 +1,15 @@
+plugins:
+  - jekyll-relative-links
+relative_links:
+  enabled: true
+  collections: true
+include:
+  - install
+  - homework
+  - firststeps
+  - DataIOandstats
+  - ggploting
+  - Stats
+  - tidyverse
+  - shiny
+theme: jekyll-theme-cayman

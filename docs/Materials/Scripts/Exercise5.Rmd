@@ -1,0 +1,43 @@
+---
+title: "Exerscise 5"
+output: html_notebook
+---
+
+```{r}
+# Load tidyverse
+library(tidyverse)
+library(RColorBrewer)
+setwd("/Users/alex/Desktop/")
+
+df <- read.csv("totalrootdf.csv")
+df
+```
+```{r}
+mean(df$rootlength)   # What is the mean rootlength?
+median(df$rootlength)   # What is the median rootlength?
+max(df$rootlength)    # What is the maximum rootlength?
+table(df$Genotype)    # How many observations for each Genotype?
+
+```
+
+
+```{r}
+htest_A <- t.test(x = df$rootlength,     # The data
+                  alternative = "two.sided",  # Two-sided test
+                  mu = 0.5)                   # The null hyopthesis
+htest_A            # Print result
+names(htest_A)     # See all attributes in object
+htest_A$statistic  # Get just the test statistic
+htest_A$p.value    # Get the p-value
+htest_A$conf.int   # Get a confidence interval
+
+```
+
+```{r}
+res.aov <- aov(rootlength ~ Genotype, data = df)
+
+summary(res.aov)
+
+TukeyHSD(res.aov)
+
+```

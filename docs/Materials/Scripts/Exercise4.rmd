@@ -1,0 +1,117 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r}
+# Load tidyverse
+library(tidyverse)
+library(RColorBrewer)
+setwd("/Users/alex/Desktop/")
+
+df <- read.csv("totalrootdf.csv")
+df
+```
+
+```{r}
+# trying to plot without mappings
+ggplot(data = df)
+```
+```{r}
+# Map rootlength to x-axis and Hair.Root.length to y-axis
+ggplot(data = df, 
+       mapping = aes(x = rootlength, y = Hair.Root.length))
+```
+```{r}
+#  Add points with geom_point()
+ggplot(data = df, 
+       mapping = aes(x = rootlength, y = Hair.Root.length)) +
+       geom_point()     
+```
+```{r}
+# Again, but with some additional arguments
+# Also using a new theme temporarily
+ggplot(data = df, 
+       mapping = aes(x = rootlength, y = Hair.Root.length)) +
+       geom_point(col = "blue",                  # Red points
+                  size = 2,                     # Larger size
+                  alpha = .5,                   # Transparent points
+                  position = "jitter") +        # Jitter the points         
+         scale_x_continuous(limits = c(0, 10)) +  # Axis limits
+         scale_y_continuous(limits = c(0, 5)) +
+  theme_minimal()
+```
+```{r}
+# Assign class to the color aesthetic and add labels with labs()
+ggplot(data = df, 
+       mapping = aes(x = rootlength, y = Hair.Root.length, col = Sample)) +  # Change color based on class column
+  geom_point(size = 1, position = 'jitter') +
+  labs(x = "Root length (mm)",
+       y = "Root hair length (mm)",
+       title = "GA effect in root architecture",
+       subtitle = "Root length vs root hair lenth in GA PAC treated seedling",
+       caption = "Source: Fake data repository")
+```
+
+```{r}
+# Add a regression line for each class
+ggplot(data = df, 
+       mapping = aes(x = rootlength, y = Hair.Root.length)) +
+  geom_point(size = 1, alpha = .5) + 
+  geom_smooth(method = "lm")
+
+```
+```{r}
+# Facet by class
+ggplot(data = df,
+       mapping = aes(x = rootlength, 
+                     y = Hair.Root.length, 
+                     color = factor(Sample))) + 
+  geom_point() +
+  facet_wrap(~ Genotype) + coord_flip()
+``` 
+  
+### Boxplot geom `geom_boxplot()`
+
+```{r}
+g <- ggplot(df, aes(x = Sample, y = rootlength, colour = Treatment)) +
+  geom_boxplot(notch = FALSE) +
+  geom_jitter(size = 0.5, alpha = 0.05, width = 0.25, colour = 'black') +
+  labs(x = 'Samples', y = 'Root length (mm)') +
+  ggtitle('Effect of GA in root lenth')+
+  labs(colour = 'Treatment')+
+  scale_colour_brewer(palette = 'Set2') +
+  theme_bw() +
+  theme(
+    axis.text.x = element_text(angle = 45, hjust = 1),
+    legend.position = 'top',
+    panel.grid.major = element_blank(),
+    panel.grid.minor = element_blank()
+  )
+
+g1 <- ggplot(df, aes(x = Sample, y = Hair.Root.length, colour = Treatment)) +
+  geom_violin() +
+  geom_jitter(size = 0.5, alpha = 0.05, width = 0.25, colour = 'black') +
+  labs(x = 'Samples', y = 'Root length (mm)') +
+  ggtitle('Effect of GA in Hair root lenth')+
+  labs(colour = 'Treatment')+
+  scale_colour_brewer(palette = 'Set2') +
+  stat_summary(fun.y = "mean", geom = "point", col = "black", size = 3) +
+  theme_bw() +
+  theme(
+    axis.text.x = element_text(angle = 45, hjust = 1),
+    legend.position = 'top',
+    panel.grid.major = element_blank(),
+    panel.grid.minor = element_blank()
+  )
+
+mg <- plot_grid(g, g1,labels = c('A', 'B'), label_size = 12)
+mg
+```
+
+
+
+```{r}
+ggsave(filename = "myplot.pdf", plot = mg, width = 6, height = 4)
+```
+

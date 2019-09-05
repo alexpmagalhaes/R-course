@@ -1,0 +1,62 @@
+---
+title: "Exercise 1"
+output: html_notebook
+---
+
+
+```{r}
+#Arithemetics in r
+5+7-1
+
+#create an object to store a result
+rs <- 5+7-1
+
+#valiables can be assigned using the same method
+x <- 5
+y <- 7
+z <- 1
+
+#to distiguish formulas from objects use '='
+fm = x+y-z
+
+#use the name of the object to print the values
+fm
+
+#other functions are also available
+log2(fm)
+log10(fm)
+exp(fm)
+sqrt(fm)
+
+```
+```{r}
+#Vectors are sequences of variables
+vc <- c(2,2,2,2,3,3,3,4,4,4,4,4,4,4,4,5,5,5,5,5,5,5,5,7,7,7,7,8,8,8,8,9,9) #use c() to define the variables of the Vectors
+
+#to get any stat from a vector we use:
+length(vc) #to check how many elements are in the object
+class(vc) #to check the type of elements in the object
+max(vc) #maximun value
+mean(vc) #average value
+
+hist(vc) #to check the distribution of the variables of an object
+
+#transformations can be done with any formula
+newvc <- vc + 1 #make the change permenent
+
+newvc
+```
+```{r}
+#Other types of data can be used in r
+nvalue <- 1523 #interger are natural numbers
+
+cvalue <- "genotype" #text can also be used
+
+lvalue <- TRUE #logical terms
+
+
+class(nvalue)
+
+nvalue + x
+
+```
