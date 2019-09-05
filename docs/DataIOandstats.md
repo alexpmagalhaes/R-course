@@ -35,9 +35,6 @@ Calculate basic descriptive statistics using `mean()`, `median()`, `table()` (an
   4. Have a look at the first rows of the table and note if the table is loaded the right way. Also when using RStudio you can click twice in object to open the full table.
   5. Some of the files are not in csv file format. Write to the folder csv versions of the txt and excel files with `write.csv`.
 
-<details><summary>Solution</summary>
-<p>
-
   ```r
   rootl_df <- read.csv("rootlength.csv", header = TRUE, row.names = NULL, sep = ",", dec = ".")
 
@@ -52,8 +49,7 @@ Calculate basic descriptive statistics using `mean()`, `median()`, `table()` (an
   write.csv(heat_df, file = "heat_df.csv", quote = FALSE, row.names = TRUE)
 
 ```
-</p>
-</details>
+
 
 By now you should be able to read and write in R.
 Next step is to check some properties of the tables you loaded.
@@ -66,9 +62,6 @@ This not only helps you understant if the objects were created the right way but
   2. You also need to report the mean of first column, all well of the global summary of the rest of the table.
   3. Check the distribution of the data to have a felling on the type of statistics you could do in the down stream analysis.
   4. Put together a function of your choice with a subsection of the data.
-
-<details><summary>Solution</summary>
-<p>
 
   ```r
 
@@ -83,8 +76,6 @@ hist(rootl_df$colMock)
 mean(rootl_df$colMock[rootl_df$colMock < 5])
 
 ```
-</p>
-</details>
 
   Sometimes you also need to simulate data.
   R can sample data points from a number of distributions.
@@ -103,9 +94,6 @@ Today you are going to sample from **uniform** and **normal** distributions. The
   6. Write a csv file containing the new data frame.
 
 
-<details><summary>Solution</summary>
-<p>
-
 ```r
 library("tibbles")
 
@@ -120,8 +108,7 @@ hist(colMock)
 write.csv(newtable, file = "newtable.csv", quote = FALSE , row.names = FALSE )
 
 ```
-  </p>
-</details>
+
 
 
 ## You are done!

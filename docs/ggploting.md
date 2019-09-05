@@ -94,10 +94,7 @@ Try to make this plot.
 ![challange](https://alexpmagalhaes.github.io/SFB924-R-course/jpegs/00001d.png)
 
 
-<details><summary>Solution</summary>
-<p>
-
-  ```{r}
+  ```{r, echo = FALSE}
 g <- ggplot(df, aes(x = Sample, y = rootlength, colour = Treatment)) +
   geom_boxplot(notch = FALSE) +
   geom_jitter(size = 0.5, alpha = 0.05, width = 0.25, colour = 'black') +
@@ -137,8 +134,7 @@ mg <- plot_grid(g, g1,labels = c('A', 'B'), label_size = 12)
 mg
 
 ```
-</p>
-</details>
+
 
 Now lets save the plot!
 

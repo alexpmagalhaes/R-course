@@ -136,10 +136,8 @@ I want you to:
 To aid in this task I will list all the functions you will need.
 `read_csv`, `write.csv`, `gather`, `spread`, `str_split_fixed`, `paste`, `collapse`, `group_by`, `summarize`, `mean`, `column_to_rownames`, `apply`.
 
-<details><summary>Solution</summary>
-<p>
 
-```r
+```{r, echo = FALSE}
 repqPCR <- read_csv("qPCR_replicates.csv")
 longrepqPCR <- gather(repqPCR, "group", "Expression", -ID)
 longrepqPCR$tgroup = apply(
@@ -155,8 +153,6 @@ meansqPCR <- meansqPCR %>% column_to_rownames('ID')
 write.csv(meansqPCR, file= "meansqPCR.csv")
 
 ```
-</p>
-</details>
 
 ## You are done!
 

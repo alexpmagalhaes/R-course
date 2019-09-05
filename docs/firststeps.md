@@ -40,8 +40,6 @@ Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by press
   5. **Print** that function
   6. Use other arithmetic functions with that object like  `log2()`, `log10()`, `exp()`, `sqrt()`.
 
-  <details><summary>Solution</summary>
-  <p>
 
   ```r
   5+7-1
@@ -62,9 +60,6 @@ Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by press
   sqrt(fm)
   ```
 
-  </p>
-  </details>
-
 2. Working with **vector**, **lists** or other types of data objects is important.
 Many packages for R requier diferent types of data to function correctly so you should be able to generate and modify them. We will focus in vectors because its the most importa of these data objects.
 
@@ -83,9 +78,6 @@ To start you need to generate a vector with `c()`function.
   4. Add 1 to that vector
   5. Print that new vector
 
-  <details><summary>Solution</summary>
-  <p>
-
   ```r
   vc <- c(2,2,2,2,3,3,3,4,4,4,4,4,4,4,4,5,5,5,5,5,5,5,5,7,7,7,7,8,8,8,8,9,9)
 
@@ -100,9 +92,6 @@ To start you need to generate a vector with `c()`function.
 
   newvc
   ```
-
-  </p>
-  </details>
 
 #### Types of data in R
 
@@ -122,8 +111,6 @@ Numerous data types can be used in R.
 
 Create a set of objects for **numeric**, **logical**, **character**
 
-<details><summary>Solution</summary>
-<p>
 
 ```r
 nvalue <- 1523
@@ -134,16 +121,11 @@ lvalue <- TRUE
 
 ```
 
-</p>
-</details>
 
 Common formatation errors can be trace back to value classes that are loaded into R and expected by a package. *Always check the class of data that R loaded and check the documentation for the expected data class for each function*
 
 Please check the class of your numeric value! and a **x** from the previous exercises to this value.
 
-
-<details><summary>Solution</summary>
-<p>
 
 ```r
 class(nvalue)
@@ -151,8 +133,6 @@ class(nvalue)
 nvalue + x
 ```
 
-</p>
-</details>
 
 #### Functions used in this exercise
 
