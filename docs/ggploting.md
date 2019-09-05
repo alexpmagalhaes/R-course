@@ -91,13 +91,13 @@ ggplot(data = df,
 
 Try to make this plot.
 
-![challange](https://github.com/alexpmagalhaes/SFB924-R-course/docs/jpegs/00001d.png)
+![challange](https://alexpmagalhaes.github.io/SFB924-R-course/jpegs/00001d.png)
 
 
 <details><summary>Solution</summary>
 <p>
 
-  ```r
+  ```{r}
 g <- ggplot(df, aes(x = Sample, y = rootlength, colour = Treatment)) +
   geom_boxplot(notch = FALSE) +
   geom_jitter(size = 0.5, alpha = 0.05, width = 0.25, colour = 'black') +

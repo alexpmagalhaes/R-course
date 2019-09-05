@@ -88,7 +88,7 @@ If you want to only keep the new columns you can use `transmute().
 
 9. Filtering is acomplished by `filter()` and logical operators you can use are `&` is **and**, `|` is **or**, and `!` is **not**.
 
-![Logical opetarors](https://github.com/alexpmagalhaes/SFB924-R-course/docs/jpegs/spread_data_R.png)
+![Logical opetarors](https://alexpmagalhaes.github.io/SFB924-R-course/jpegs/spread_data_R.png)
 
 ```r
 rldfColGA <- rldf %>%
@@ -116,7 +116,7 @@ write.csv(totaldf, file = "totalrootdf.csv", row.names = FALSE)
 ```
 12. Widening and shortning a data frame is an important step so other packages can use the data. `spread(key = XXX, value = YYY, fill = VALUE )` and `gather(key = XXX, value = YYY, fill = VALUE )` acomplieh this task.
 
-![wideandlong](https://github.com/alexpmagalhaes/SFB924-R-course/docs/jpegs/transform-logical.png)
+![wideandlong](https://alexpmagalhaes.github.io/SFB924-R-course/jpegs/transform-logical.png)
 
 
 ```r
