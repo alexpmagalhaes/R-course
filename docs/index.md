@@ -27,23 +27,3 @@ To start with the execises pleat follow the links bellow
 * [Shiny](https://shiny.rstudio.com/) - web application framework for Rstudio
 * [edx - Intro to R programming](https://www.edx.org/course/introduction-r-programming-microsoft-dat204x-0) - I learned most of my R in this course
 * [JHU - Data science](https://www.coursera.org/specializations/jhu-data-science) - This is for advance users but you will bocame a pro after this course.
-
-
-|Schedule||
-|:------|:--------|
-|9:00AM|Welcome to R: an introduction|
-|10:00AM|First steps into R: felling like hacker man|
-|10:15AM|**Coffee break**|
-|10:30AM|Data, data and more data|
-|12:00AM|**Lunch break**|
-|1:00PM|Tiding up R|
-|3:00PM|**Coffee break**|
-|3:30PM|ggploting (aka the one you don’t want to skip)|
-|5:00PM|Shiny: The clicky clicky part|
-|6:30PM|**End of the course**|
-
-
-
-
-
-### See you on the 5th!
