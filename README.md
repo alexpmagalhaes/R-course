@@ -1,8 +1,7 @@
 # R for the uninitiated
 
-This is the repository for the R course for the SFB924.
+This is the repository for the R course for the MolMed 2023.
 
-The R course will take place on the 5th of September from 9 o’clock to around 18 o’clock.
 
 This course will focus on 2 parts:
 
