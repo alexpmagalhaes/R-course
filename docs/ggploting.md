@@ -1,6 +1,6 @@
 #  ggploting (aka the one you don’t want to skip)
 
-[Home](https://alexpmagalhaes.github.io/SFB924-R-course/index)
+[Home](https://alexpmagalhaes.github.io/R-course/index)
 
 ## Exercise 4
 In this exercise you'll practice plotting data with the `ggplot2` package.
@@ -116,4 +116,4 @@ To Download the notebook click [here](https://alexpmagalhaes.github.io/SFB924-R-
 
 [Back to the Top](#tiding-up-r)
 
-[Home](https://alexpmagalhaes.github.io/SFB924-R-course/index)
+[Home](https://alexpmagalhaes.github.io/R-course/index)

@@ -1,6 +1,6 @@
 #  Shiny and more
 
-[Home](https://alexpmagalhaes.github.io/SFB924-R-course/index)
+[Home](https://alexpmagalhaes.github.io/R-course/index)
 
 ## Exercise 5
 
@@ -73,4 +73,4 @@ To Download the notebook click [here](https://alexpmagalhaes.github.io/SFB924-R-
 
 [Back to the Top](#shiny-and-more)
 
-[Home](https://alexpmagalhaes.github.io/SFB924-R-course/index)
+[Home](https://alexpmagalhaes.github.io/R-course/index)

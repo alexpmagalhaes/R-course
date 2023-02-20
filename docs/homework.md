@@ -1,6 +1,6 @@
 # Homework!
 
-[Home](https://alexpmagalhaes.github.io/SFB924-R-course/index)
+[Home](https://alexpmagalhaes.github.io/R-course/index)
 
 ### A couple of basics with R
 
@@ -59,4 +59,4 @@ You can [download](https://alexpmagalhaes.github.io/SFB924-R-course/Materials/Sc
 
 [Back to the Top](#homework)
 
-[Home](https://alexpmagalhaes.github.io/SFB924-R-course/index)
+[Home](https://alexpmagalhaes.github.io/R-course/index)

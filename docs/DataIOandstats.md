@@ -1,6 +1,6 @@
 #  Data, data and more data
 
-[Home](https://alexpmagalhaes.github.io/SFB924-R-course/index)
+[Home](https://alexpmagalhaes.github.io/R-course/index)
 
 ## Exercise 2
 
@@ -171,4 +171,4 @@ To Download the notebook click [here](https://alexpmagalhaes.github.io/SFB924-R-
 
 [Back to the Top](#data-data-and-more-data)
 
-[Home](https://alexpmagalhaes.github.io/SFB924-R-course/index)
+[Home](https://alexpmagalhaes.github.io/R-course/index)

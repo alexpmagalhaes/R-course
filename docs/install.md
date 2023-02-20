@@ -1,6 +1,6 @@
 ## How to install the necessary programs
 
-[Home](https://alexpmagalhaes.github.io/SFB924-R-course/index)
+[Home](https://alexpmagalhaes.github.io/R-course/index)
 
 ### Mac Users
 To Install R
@@ -65,4 +65,4 @@ library("rmarkdown")
 
 [Back to the Top](#how-to-install-the-necessary-programs)
 
-[Home](https://alexpmagalhaes.github.io/SFB924-R-course/index)
+[Home](https://alexpmagalhaes.github.io/R-course/index)
