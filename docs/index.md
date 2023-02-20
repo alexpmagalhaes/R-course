@@ -1,4 +1,4 @@
-# Welcome to the SFB924 R course
+# Welcome to the MolMed R course
 
 ### Before we start you need to install some programs!
 
