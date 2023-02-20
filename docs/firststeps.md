@@ -155,7 +155,7 @@ To check all the solutions pleae follow this [Link](http://rpubs.com/alexpmagalh
 
 To Download the notebook click [here](https://alexpmagalhaes.github.io/R-course/Materials/Scripts/Exercise1.Rmd)
 
-[Back to the Top](#welcome-to-the-sfb924-r-course)
+[Back to the Top](#welcome-to-the-r-course)
 
 [Home](https://alexpmagalhaes.github.io/R-course/index)
 

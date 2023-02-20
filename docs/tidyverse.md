@@ -25,7 +25,7 @@ By the end you will be able to:
  You will be asked to complete a challange that will allow you to rearange and qPCR data set in the typical sampleling layout and calculate means of tecnical samples.
 
 
-To explore the basic data manipulation you will need to creat a new folder for Exercise 3 and download the [File 1](https://alexpmagalhaes.github.io/SFB924-R-course/Materials/Datasets/Exercise3/root_length.csv), [2](https://alexpmagalhaes.github.io/SFB924-R-course/Materials/Datasets/Exercise3/root_hair.csv) and [3](https://alexpmagalhaes.github.io/SFB924-R-course/Materials/Datasets/Exercise3/qPCR_replicates.csv).
+To explore the basic data manipulation you will need to creat a new folder for Exercise 3 and download the [File 1](https://alexpmagalhaes.github.io/R-course/Materials/Datasets/Exercise3/root_length.csv), [2](https://alexpmagalhaes.github.io/R-course/Materials/Datasets/Exercise3/root_hair.csv) and [3](https://alexpmagalhaes.github.io/R-course/Materials/Datasets/Exercise3/qPCR_replicates.csv).
 
 We will work fist with File **1** and **2**. I will name variables 'XXX' or 'YYY',the files you need as 'FILE1' or 'FILE2'.
 
