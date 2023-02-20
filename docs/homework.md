@@ -55,7 +55,7 @@ If everything went smooth you just wrote your first lines in R!
 
 ##### We will save the notebook for the course!
 
-You can [download](https://alexpmagalhaes.github.io/SFB924-R-course/Materials/Scripts/Homework.R) the r script for reference!
+You can [download](https://alexpmagalhaes.github.io/R-course/Materials/Scripts/Homework.R) the r script for reference!
 
 [Back to the Top](#homework)
 

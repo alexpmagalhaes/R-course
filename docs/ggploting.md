@@ -4,7 +4,7 @@
 
 ## Exercise 4
 In this exercise you'll practice plotting data with the `ggplot2` package.
-All you will need is a csv [file](https://alexpmagalhaes.github.io/SFB924-R-course/Materials/Datasets/Exercise4/totalrootdf.csv)
+All you will need is a csv [file](https://alexpmagalhaes.github.io/R-course/Materials/Datasets/Exercise4/totalrootdf.csv)
 We will call this **df** just to be easier.
 
 
@@ -91,7 +91,7 @@ ggplot(data = df,
 
 Try to make this plot.
 
-![challange](https://alexpmagalhaes.github.io/SFB924-R-course/jpegs/00001d.png)
+![challange](https://alexpmagalhaes.github.io/R-course/jpegs/00001d.png)
 
 
 
@@ -112,7 +112,7 @@ ggplot is more easily learned with exemples:
 
 To check all the solutions pleae follow this [Link](http://rpubs.com/alexpmagalhaes/Exercise4).
 
-To Download the notebook click [here](https://alexpmagalhaes.github.io/SFB924-R-course/Materials/Scripts/Exercise4.Rmd)
+To Download the notebook click [here](https://alexpmagalhaes.github.io/R-course/Materials/Scripts/Exercise4.Rmd)
 
 [Back to the Top](#tiding-up-r)
 

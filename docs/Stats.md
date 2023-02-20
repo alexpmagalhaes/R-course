@@ -12,7 +12,7 @@ In this practical you'll do basic statistics in R. By the end of this practical 
 4. Explore statistical objects with `names()`, `summary()`, `print()`, `predict()`
 5. Use sampling functions such as `rnorm()` to conduct simulations
 
-All you will need is a csv [file](https://alexpmagalhaes.github.io/SFB924-R-course/Materials/Datasets/Exercise4/totalrootdf.csv)
+All you will need is a csv [file](https://alexpmagalhaes.github.io/R-course/Materials/Datasets/Exercise4/totalrootdf.csv)
 We will call this **df** just to be easier.
 
 1. You need to set the _working directory_.
@@ -85,7 +85,7 @@ Here are the random sampling functions we will use
 
 To check all the solutions pleae follow this [Link](http://rpubs.com/alexpmagalhaes/Exercise5).
 
-To Download the notebook click [here](https://alexpmagalhaes.github.io/SFB924-R-course/Materials/Scripts/Exercise5.Rmd)
+To Download the notebook click [here](https://alexpmagalhaes.github.io/R-course/Materials/Scripts/Exercise5.Rmd)
 
 [Back to the Top](#statistics)
 

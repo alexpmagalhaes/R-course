@@ -69,7 +69,7 @@ If you are looking for excel replacements
 
 To check all the solutions pleae follow this [Link](http://rpubs.com/alexpmagalhaes/Exercise6).
 
-To Download the notebook click [here](https://alexpmagalhaes.github.io/SFB924-R-course/Materials/Scripts/Exercise6.Rmd)
+To Download the notebook click [here](https://alexpmagalhaes.github.io/R-course/Materials/Scripts/Exercise6.Rmd)
 
 [Back to the Top](#shiny-and-more)
 

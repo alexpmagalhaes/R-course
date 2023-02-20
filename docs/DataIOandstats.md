@@ -116,7 +116,7 @@ write.csv(newtable, file = "newtable.csv", quote = FALSE , row.names = FALSE )
 Now everything changes!
 
 
-##### Please proced to [Exercise 3](https://alexpmagalhaes.github.io/SFB924-R-course/docs/tidyverse.md)
+##### Please proced to [Exercise 3](https://alexpmagalhaes.github.io/R-course/docs/tidyverse.md)
 
 
 
@@ -167,7 +167,7 @@ Now everything changes!
 
 To check all the solutions pleae follow this [Link](http://rpubs.com/alexpmagalhaes/Exercise2).
 
-To Download the notebook click [here](https://alexpmagalhaes.github.io/SFB924-R-course/Materials/Scripts/Exercise2.Rmd)
+To Download the notebook click [here](https://alexpmagalhaes.github.io/R-course/Materials/Scripts/Exercise2.Rmd)
 
 [Back to the Top](#data-data-and-more-data)
 

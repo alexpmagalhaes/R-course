@@ -2,22 +2,22 @@
 
 ### Before we start you need to install some programs!
 
-follow the [link](https://alexpmagalhaes.github.io/SFB924-R-course/install) for the full installation tutorial.
+follow the [link](https://alexpmagalhaes.github.io/R-course/install) for the full installation tutorial.
 This should be done before the course!
 
-I also added the homework is this [link](https://alexpmagalhaes.github.io/SFB924-R-course/homework)!
+I also added the homework is this [link](https://alexpmagalhaes.github.io/R-course/homework)!
 
 If you have any difficulties email me at alexandre.magalhaes@wzw.tum.de
 
 To start with the execises pleat follow the links bellow
 
 
-1. [First steps into R](https://alexpmagalhaes.github.io/SFB924-R-course/firststeps)
-2. [Data IO and simple stats](https://alexpmagalhaes.github.io/SFB924-R-course/DataIOandstats)
-3. [ggploting](https://alexpmagalhaes.github.io/SFB924-R-course/ggploting)
-4. [Tiding up R](https://alexpmagalhaes.github.io/SFB924-R-course/tidyverse)
-5. [Statistcs in R](https://alexpmagalhaes.github.io/SFB924-R-course/Stats)
-6. [Shiny and more](https://alexpmagalhaes.github.io/SFB924-R-course/shiny)
+1. [First steps into R](https://alexpmagalhaes.github.io/R-course/firststeps)
+2. [Data IO and simple stats](https://alexpmagalhaes.github.io/R-course/DataIOandstats)
+3. [ggploting](https://alexpmagalhaes.github.io/R-course/ggploting)
+4. [Tiding up R](https://alexpmagalhaes.github.io/R-course/tidyverse)
+5. [Statistcs in R](https://alexpmagalhaes.github.io/R-course/Stats)
+6. [Shiny and more](https://alexpmagalhaes.github.io/R-course/shiny)
 
 
 ### Resources for R
