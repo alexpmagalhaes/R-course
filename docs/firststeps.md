@@ -1,4 +1,4 @@
-# Welcome to the SFB924 R course
+# Welcome to the MolMed R course
 
 [Home](https://alexpmagalhaes.github.io/R-course/index)
 

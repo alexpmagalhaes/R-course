@@ -15,7 +15,7 @@ By the end you will be able to:
 
 
 1. Frist step is to make a folder on the desktop so we can have a _working directory_.
-2. Download the 3 tables that are required for this exercise and copy them to the folder you created earlier. [File 1](https://alexpmagalhaes.github.io/SFB924-R-course/Materials/Datasets/Exercise2/DEGS.txt), [File 2](https://alexpmagalhaes.github.io/SFB924-R-course/Materials/Datasets/Exercise2/qPCR.xls), [File 3](https://alexpmagalhaes.github.io/SFB924-R-course/Materials/Datasets/Exercise2/rootlength.csv).
+2. Download the 3 tables that are required for this exercise and copy them to the folder you created earlier. [File 1](https://alexpmagalhaes.github.io/R-course/Materials/Datasets/Exercise2/DEGS.txt), [File 2](https://alexpmagalhaes.github.io/R-course/Materials/Datasets/Exercise2/qPCR.xls), [File 3](https://alexpmagalhaes.github.io/R-course/Materials/Datasets/Exercise2/rootlength.csv).
 3. Open a new notebook and **let's get started**!
 
 In this exercice you’ll learn how to deal with simple tables and functions, how to read and save data and make some simple statistics.
