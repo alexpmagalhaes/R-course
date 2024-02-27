@@ -7,7 +7,7 @@ This should be done before the course!
 
 I also added the homework is this [link](https://alexpmagalhaes.github.io/R-course/homework)!
 
-If you have any difficulties email me at alexandre.magalhaes@wzw.tum.de
+If you have any difficulties email me at magalhae@molgen.mpg.de
 
 To start with the execises pleat follow the links bellow
 
