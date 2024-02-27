@@ -95,7 +95,7 @@ Today you are going to sample from **uniform** and **normal** distributions. The
 
 
 ```r
-library("tibbles")
+library("tibble")
 
 colMock <- runif(500, min = 3, max = 4)
 colGA <- rnorm(500, 4.5, 1)
