@@ -55,6 +55,17 @@ If everything went smooth you just wrote your first lines in R!
 
 ##### We will save the notebook for the course!
 
+
+```mkdir -p ~/miniconda3
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh
+bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
+rm -rf ~/miniconda3/miniconda.sh
+
+~/miniconda3/bin/conda init bash
+source $HOME/.bashrc
+```
+
+
 You can [download](https://alexpmagalhaes.github.io/R-course/Materials/Scripts/Homework.R) the r script for reference!
 
 [Back to the Top](#homework)
